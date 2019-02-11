@@ -1,9 +1,13 @@
 import React from 'react'
+import { ListingInfo } from './ListingInfo'
 
 const FeaturedListings = () => {
   return (
     <div>
-      <h3>FeaturedListings</h3>
+      <ListingInfo />
+      <ListingInfo />
+      <ListingInfo />
+      <ListingInfo />
     </div>
   )
 }
