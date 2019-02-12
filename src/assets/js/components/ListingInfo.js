@@ -32,7 +32,7 @@ class ListingInfo extends React.Component {
     return (
       <div>
         <h3>{this.props.property.address}, {this.props.property.city}</h3>
-        <img src={this.state.mainImage} alt=""/>
+        <img src={this.state.mainImage} alt="Property Image"/>
         <p>Price: {this.props.property.price}</p>
         <p>Bedrooms: {this.props.property.bedrooms}</p>
         <p>Bathrooms: {this.props.property.bathrooms}</p>
