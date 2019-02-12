@@ -13,8 +13,6 @@ const Header = () => {
         </li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/browse">Browse</Link></li>
-        <li><Link to={`/listing/${34}`}>Listing</Link></li>
-        <li><Link to={`/listing/${1613}/edit`}>Edit</Link></li>
       </ol>
     </div>
   )

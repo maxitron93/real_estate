@@ -1,5 +1,7 @@
 import React from 'react'
 import queryString from 'query-string'
+import { data } from '../dummyData'
+import { ListingInfo } from './ListingInfo'
 
 const BrowseListings = (props) => {
   let queryStringObject = queryString.parse(props.location.search)
@@ -11,6 +13,9 @@ const BrowseListings = (props) => {
   return (
     <div>
       <h1>BrowseListings</h1>
+      {data.map((current, index, array) => {
+        return <ListingInfo key={index} property={current}/>
+      })}
     </div>
   )
 }
