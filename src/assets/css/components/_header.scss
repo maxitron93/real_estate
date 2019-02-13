@@ -1,0 +1,26 @@
+.component-header {
+  background-color: $main-blue;
+  width: 100%;
+  height: $header-height;
+}
+
+.component-header .logo, 
+.component-header ol {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.component-header li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.component-header li a {
+  color: $main-white-font;
+  text-decoration: none;
+  font-size: 110%;
+  border-bottom: 1px solid $main-white-font;
+  padding-bottom: 4px;
+}

@@ -1,0 +1,61 @@
+.component-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.component-hero .search-area {
+  position: absolute;
+  width: 60%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.component-hero .search-area {
+  background-color: rgba(63, 65, 216, 0.8);
+  padding: 50px;
+  border-radius: 20px;
+  color: $main-white-font;
+}
+
+.component-hero .search-area h3,
+.component-hero .search-area p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.component-hero .search-area h3 {
+  font-size: 150%; 
+}
+
+.component-hero .search-area .input-area input {
+  display: inline-block;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 8px;;
+}
+
+.component-hero .search-area .search-button {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  padding: 9px;
+  background-color: rgb(46, 155, 46);
+  text-decoration: none;
+  border: none;
+  color: black;
+  font-size: 105%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px black;
+}

@@ -1,6 +1,5 @@
 @import './base/settings';
 @import './base/base';
+@import './components/header';
+@import './components/hero';
 
-* {
-  color: $off-black; // This is how to import variables from ./base/settings
-}
