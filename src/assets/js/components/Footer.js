@@ -1,10 +1,9 @@
 import React from 'react'
 
-
 const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className="component-footer">
+      <p>&copy; Cari Rumah Real Estate</p>
     </div>
   )
 }
