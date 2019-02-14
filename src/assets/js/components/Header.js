@@ -10,8 +10,8 @@ const Header = () => {
       </div>
       <ol>  
         <li><Link to="/">Cari Rumah</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/browse">Browse</Link></li>
+        {/* <li><Link to="/about">About</Link></li> */}
+        <li><Link to="/browse">Browse Listings</Link></li>
       </ol>
     </div>
   )
