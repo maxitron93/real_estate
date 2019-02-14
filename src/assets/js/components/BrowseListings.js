@@ -11,8 +11,8 @@ const BrowseListings = (props) => {
   console.log(queryStringObject.maxPrice)
 
   return (
-    <div>
-      <h1>BrowseListings</h1>
+    <div className="component-browseListings">
+      <h2>BrowseListings</h2>
       {data.map((current, index, array) => {
         return <ListingInfo key={index} property={current}/>
       })}
