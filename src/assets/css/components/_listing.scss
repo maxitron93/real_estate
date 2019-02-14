@@ -22,6 +22,17 @@
 }
 
 .component-listing .listing-container .images .main-image {
+  width: 78%;
+  vertical-align: top;
+}
+
+.component-listing .listing-container .images .sub-images {
+  display: inline-block;
+  width: 18.5%;
+  margin-left: 2%;
+}
+
+.component-listing .listing-container .images .sub-images img {
   width: 100%;
 }
 
@@ -52,4 +63,9 @@
   text-decoration: none;
   color: black;
   box-shadow: 2px 2px 15px black;
+}
+
+.component-listing .listing-container .description {
+  color: $main-blue;
+  font-size: 110%;
 }

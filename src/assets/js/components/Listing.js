@@ -27,6 +27,10 @@ class Listing extends React.Component {
           exists: true,
           id: propertyData.id,
           mainImage: propertyData.mainImage,
+          subImage1: propertyData.subImage1,
+          subImage2: propertyData.subImage2,
+          subImage3: propertyData.subImage3,
+          subImage4: propertyData.subImage4,
           address: propertyData.address,
           city: propertyData.city,
           description: propertyData.description,
@@ -51,7 +55,13 @@ class Listing extends React.Component {
           <div>
             <div className="listing-container">
               <div className="images">
-                <img className="main-image" src={this.state.mainImage} alt=""/>
+                <img className="main-image" src={this.state.mainImage} alt="Main Image"/>
+                <div className="sub-images">
+                  <img src={this.state.subImage1} alt="Sub Image"/>
+                  <img src={this.state.subImage2} alt="Sub Image"/>
+                  <img src={this.state.subImage3} alt="Sub Image"/>
+                  <img src={this.state.subImage4} alt="Sub Image"/>
+                </div>
               </div>
               <div className="information">
                 <p>${this.state.price}</p>
@@ -60,6 +70,9 @@ class Listing extends React.Component {
                 <p>{this.state.garages} Garages</p>
                 <Link className="link-button back-button" to={`/browse`}>Back</Link>
                 <Link className="link-button edit-button" to={`/listing/${this.state.id}/edit`}>Edit</Link>
+              </div>
+              <div className="description">
+                <p>{this.state.description}</p>
               </div>
             </div>
             
