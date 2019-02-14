@@ -1,0 +1,53 @@
+.component-listingInfo {
+  width: 29%;
+  margin-right: 2.1%;
+  margin-left: 2.2%;
+  display: inline-block;
+  background-color: $faint-blue; 
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.component-listingInfo h3,
+.component-listingInfo p {
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgb(240, 240, 240);
+}
+
+.component-listingInfo h3 {
+  font-size: 120%;
+}
+
+.component-listingInfo p {
+  display: inline-block;
+  width: 29.5%;
+  font-size: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.component-listingInfo img {
+  width: 100%;
+}
+
+.component-listingInfo .button-more-info {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  padding: 9px;
+  background-color: $button-green;
+  text-decoration: none;
+  border: none;
+  color: black;
+  font-size: 105%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px black;
+}

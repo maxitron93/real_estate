@@ -1,7 +1,7 @@
 .component-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../img/hero.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 100vh;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .component-hero .search-area {
-  background-color: rgba(63, 65, 216, 0.8);
+  background-color: $faint-blue;
   padding: 50px;
   border-radius: 20px;
   color: $main-white-font;
@@ -51,11 +51,11 @@
   transform: translate(-50%);
   height: 40px;
   padding: 9px;
-  background-color: rgb(46, 155, 46);
+  background-color: $button-green;
   text-decoration: none;
   border: none;
   color: black;
   font-size: 105%;
   border-radius: 5px;
-  box-shadow: 2px 2px 20px black;
+  box-shadow: 2px 2px 15px black;
 }

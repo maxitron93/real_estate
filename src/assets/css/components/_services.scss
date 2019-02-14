@@ -1,0 +1,41 @@
+.component-services {
+  background-color: $faint-green;
+  padding-bottom: 80px;
+}
+
+.component-services h2 {
+  font-size: 300%;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  color: $main-white-font;
+}
+
+.component-services .services-box {
+  display: inline-block;
+  width: 25%;
+  margin-left: 4.1%;
+  margin-right: 4.2%;
+}
+
+.component-services ion-icon {
+  display: inline-block;
+  font-size: 500%;
+  width: 100%;
+  color: $main-white-font;
+}
+
+.component-services .services-box h3 {
+  font-size: 170%;
+  text-align: center;
+  color: $main-white-font;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.component-services .services-box p {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $main-white-font;
+}

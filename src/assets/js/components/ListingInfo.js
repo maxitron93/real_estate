@@ -30,14 +30,18 @@ class ListingInfo extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>{this.props.property.address}, {this.props.property.city}</h3>
-        <img src={this.state.mainImage} alt="Property Image"/>
-        <p>Price: {this.props.property.price}</p>
-        <p>Bedrooms: {this.props.property.bedrooms}</p>
-        <p>Bathrooms: {this.props.property.bathrooms}</p>
-        <p>Garages: {this.props.property.garages}</p>
-        <Link to={`/listing/${this.state.id}`}>More info</Link>
+      <div className="component-listingInfo">
+        <h3>{this.props.property.address}</h3>
+        <h3>{this.props.property.city}</h3>
+        <h3>${this.props.property.price}</h3>
+        <Link to={`/listing/${this.state.id}`}>
+          <img src={this.state.mainImage} alt="Property Image"/>
+        </Link>
+        
+        <p>{this.props.property.bedrooms} Bedrooms</p>
+        <p>{this.props.property.bathrooms} Bathrooms</p>
+        <p>{this.props.property.garages} Garages</p>
+        <Link className="button-more-info" to={`/listing/${this.state.id}`}>More info</Link>
       </div>
     )
   }
