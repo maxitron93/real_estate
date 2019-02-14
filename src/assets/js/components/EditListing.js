@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect } from 'react-router'
+import { Link } from 'react-router-dom'
 import { data } from '../dummyData'
 
 class EditListing extends React.Component {
@@ -60,6 +61,7 @@ class EditListing extends React.Component {
             <input type="text" name="bathrooms" defaultValue={this.state.property.bathrooms} />
             <input type="text" name="garages" defaultValue={this.state.property.garages} />
             <input type="text" name="price" defaultValue={this.state.property.price} />
+            <Link to={`/listing/${this.state.property.id}`}>Cancel</Link>
             <button>Save changes</button>
           </form>
         </div>

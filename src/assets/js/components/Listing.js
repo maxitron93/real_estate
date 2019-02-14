@@ -46,16 +46,23 @@ class Listing extends React.Component {
   render() {
     if(this.state.exists) {
       return (
-        <div>
-          <h1>Listing</h1>
+        <div className="component-listing">
+          <h2>{this.state.address}, {this.state.city}</h2>
           <div>
-            <h3>{this.state.address}, {this.state.city}</h3>
-            <img src={this.state.mainImage} alt=""/>
-            <p>Price: {this.state.price}</p>
-            <p>Bedrooms: {this.state.bedrooms}</p>
-            <p>Bathrooms: {this.state.bathrooms}</p>
-            <p>Garages: {this.state.garages}</p>
-            <Link to={`/listing/${this.state.id}/edit`}>Edit</Link>
+            <div className="listing-container">
+              <div className="images">
+                <img className="main-image" src={this.state.mainImage} alt=""/>
+              </div>
+              <div className="information">
+                <p>${this.state.price}</p>
+                <p>{this.state.bedrooms} Bedrooms</p>
+                <p>{this.state.bathrooms} Bathrooms</p>
+                <p>{this.state.garages} Garages</p>
+                <Link className="link-button back-button" to={`/browse`}>Back</Link>
+                <Link className="link-button edit-button" to={`/listing/${this.state.id}/edit`}>Edit</Link>
+              </div>
+            </div>
+            
           </div>
         </div>
       )

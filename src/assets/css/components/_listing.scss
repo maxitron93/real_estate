@@ -1,0 +1,55 @@
+.component-listing {
+  padding-bottom: 70px;
+  background-color: $light-grey-background;
+}
+
+.component-listing h2 {
+  font-size: 300%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: $main-blue;
+}
+
+.component-listing .listing-container {
+  width: 70%; 
+  margin: 0 auto;
+}
+
+.component-listing .listing-container .images {
+  display: inline-block;
+  width: 75%;
+}
+
+.component-listing .listing-container .images .main-image {
+  width: 100%;
+}
+
+.component-listing .listing-container .information {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  padding: 40px;
+}
+
+.component-listing .listing-container .information p {
+  margin-bottom: 20px;
+  font-size: 120%;
+  color: $main-blue;
+}
+
+.component-listing .listing-container .information .link-button {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  height: 40px;
+  font-size: 120%;
+  background-color: $button-green;
+  width: 120px;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px 15px black;
+}
