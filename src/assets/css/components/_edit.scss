@@ -1,0 +1,100 @@
+.component-edit {
+  padding-bottom: 70px;
+  background-color: $light-grey-background;
+}
+
+.component-edit h2 {
+    font-size: 300%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: $main-blue;
+}
+
+.component-edit .edit-container {
+  width: 70%; 
+  margin: 0 auto;
+}
+
+.component-edit .edit-container .images-area {
+  display: inline-block;
+  width: 75%;
+}
+
+.component-edit .edit-container .images-area .main-image {
+  width: 78%;
+  vertical-align: top;
+}
+
+.component-edit .edit-container .images-area .sub-images {
+  display: inline-block;
+  width: 18.5%;
+  margin-left: 2%;
+}
+
+.component-edit .edit-container .images-area .sub-images img {
+  width: 100%;
+}
+
+.component-edit .edit-container .proerty-information-area {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+.component-edit .edit-container .edit-input-area {
+  margin-bottom: 10px;
+  color: $main-blue;
+}
+
+.component-edit .edit-container .edit-input-area p {
+  font-size: 110%;
+}
+
+.component-edit .edit-container .edit-input-area input {
+  width: 100%;
+}
+
+.component-edit .edit-container .description-edit-area {
+  margin-top: 10px;
+  color: $main-blue;
+}
+
+.component-edit .edit-container .description-edit-area p {
+  font-size: 110%;
+}
+
+.component-edit .edit-container .description-edit-area textarea {
+  width: 100%;
+  height: 170px;
+  line-height: 20px;
+}
+
+.component-edit .edit-container .edit-button {
+  background-color: $button-green;
+  margin-top: 15px;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 200px;
+  font-size: 120%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px black;
+}
+
+.component-edit .edit-container .link-button {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 40px;
+  font-size: 120%;
+  background-color: red;
+  width: 120px;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 2px 2px 15px black;
+}

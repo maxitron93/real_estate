@@ -43,10 +43,6 @@ class Listing extends React.Component {
     }
   }
 
-  handlePrintState = () => {
-    console.log(this.state)
-  }
-
   render() {
     if(this.state.exists) {
       return (

@@ -7,11 +7,11 @@ class EditListing extends React.Component {
   state = {
     property: {},
     edited: false,
+    description: ""
   }
 
   handleOnSubmit = (event) => {
     event.preventDefault()
-    console.log(this.state.property)
 
     data.forEach((current, index, array) => {
       if(current.id === parseInt(this.state.property.id)) {
@@ -22,6 +22,7 @@ class EditListing extends React.Component {
         current.bathrooms = event.target.bathrooms.value
         current.garages = event.target.garages.value
         current.price = event.target.price.value
+        current.description = event.target.description.value
       }
     })
 
@@ -30,8 +31,6 @@ class EditListing extends React.Component {
         edited: true
       }
     })
-
-    console.log(data)
   }
 
   componentDidMount() {
@@ -43,7 +42,17 @@ class EditListing extends React.Component {
     })
     this.setState(() => {
       return {
-        property: property
+        property: property,
+        description: property.description
+      }
+    })
+  }
+
+  handleChange = (event) => {
+    let newDescription = event.target.value
+    this.setState(() => {
+      return {
+        description: newDescription
       }
     })
   }
@@ -51,20 +60,54 @@ class EditListing extends React.Component {
   render() {
     if(!this.state.edited) {
       return (
-        <div>
-          <img src={this.state.property.mainImage} alt=""/>
-          <form onSubmit={this.handleOnSubmit}>
-            <input type="text" name="address" defaultValue={this.state.property.address} />
-            <input type="text" name="city" defaultValue={this.state.property.city} />
-            <input type="text" name="description" defaultValue={this.state.property.description} />
-            <input type="text" name="bedrooms" defaultValue={this.state.property.bedrooms} />
-            <input type="text" name="bathrooms" defaultValue={this.state.property.bathrooms} />
-            <input type="text" name="garages" defaultValue={this.state.property.garages} />
-            <input type="text" name="price" defaultValue={this.state.property.price} />
-            <Link to={`/listing/${this.state.property.id}`}>Cancel</Link>
-            <button>Save changes</button>
-          </form>
-        </div>
+        <form onSubmit={this.handleOnSubmit}>
+          <div className="component-edit">
+            <h2>Edit Property</h2>
+            <div className="edit-container">
+              <div className="images-area">
+                <img className="main-image" src={this.state.property.mainImage} alt="Main Image"/>
+                <div className="sub-images">
+                  <img src={this.state.property.subImage1} alt="Sub Image"/>
+                  <img src={this.state.property.subImage2} alt="Sub Image"/>
+                  <img src={this.state.property.subImage3} alt="Sub Image"/>
+                  <img src={this.state.property.subImage4} alt="Sub Image"/>
+                </div>
+              </div>
+                <div className="proerty-information-area">
+                  <div className="edit-input-area">
+                    <p>Address:</p>
+                    <input type="text" name="address" defaultValue={this.state.property.address} />
+                  </div>
+                  <div className="edit-input-area"> 
+                    <p>City:</p>
+                    <input type="text" name="city" defaultValue={this.state.property.city} />
+                  </div>
+                  <div className="edit-input-area">
+                    <p>Bedrooms:</p>
+                    <input type="text" name="bedrooms" defaultValue={this.state.property.bedrooms} />
+                  </div>
+                  <div className="edit-input-area">
+                    <p>Bathrooms:</p>
+                    <input type="text" name="bathrooms" defaultValue={this.state.property.bathrooms} />
+                  </div>
+                  <div className="edit-input-area">
+                    <p>Garages:</p>
+                    <input type="text" name="garages" defaultValue={this.state.property.garages} />
+                  </div>
+                  <div className="edit-input-area">
+                    <p>Price:</p>
+                    <input type="text" name="price" defaultValue={this.state.property.price} />
+                  </div>
+                </div>
+                <div className="description-edit-area">
+                  <p>Description:</p>
+                  <textarea name="description" value={this.state.description} onChange={this.handleChange}/>
+                </div>
+                <button className="edit-button">Save changes</button>
+                <Link className="link-button" to={`/listing/${this.state.property.id}`}>Cancel</Link>
+            </div>
+          </div>
+        </form>
       )
     } else {
       return <Redirect to={`/listing/${this.state.property.id}`} />
